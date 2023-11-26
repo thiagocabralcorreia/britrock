@@ -29,8 +29,7 @@ const DropdownMenu = ({ show, onClose }: DropdownMenuProps) => {
                 <Link
                   key={id}
                   href={href}
-                  className="header-link block px-3 py-2 text-xl transition ease-out duration-900
-      text-white hover:text-tertiary"
+                  className="header-link block px-3 py-2 text-xl transition ease-out duration-900 text-white cursor-pointer"
                 >
                   {name}
                 </Link>

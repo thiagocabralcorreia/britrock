@@ -41,20 +41,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Link
                   key={id}
                   href={href}
-                  className="hidden lg:block header-link p-4 transition ease-out duration-900 text-lg
-      hover:text-tertiary"
+                  className="hidden lg:block header-link m-4 py-1 transition ease-out duration-900 text-lg
+                  hover:border-b"
                 >
                   {name}
                 </Link>
               );
             })}
-            <div className="ml-8 p-4">
+            <div className="ml-8 my-4 py-1">
               <div className="flex items-center cursor-pointer">
                 <LuLogOut />
-                <p
-                  className="hidden lg:block header-link pl-2 transition ease-out duration-900 text-lg
-      hover:text-tertiary"
-                >
+                <p className="hidden lg:block header-link pl-2 transition ease-out duration-900 text-lg">
                   Logout
                 </p>
               </div>

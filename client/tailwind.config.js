@@ -9,7 +9,9 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        primary: "#1A1A1A",
+      },
       fontFamily: {
         nunito: ["Nunito Sans", "sans-serif"],
         germania: ["Germania One", "sans-serif"],
