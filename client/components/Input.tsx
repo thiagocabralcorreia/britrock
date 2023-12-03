@@ -1,5 +1,7 @@
 import React from "react";
 
+import { LuX } from "react-icons/lu";
+
 interface InputProps {
   inputLabel?: string;
   labelFor: string;
@@ -8,6 +10,7 @@ interface InputProps {
   inputName: string;
   placeholderText: string;
   ariaLabelName: string;
+  error?: string;
 }
 
 const Input = ({
@@ -18,6 +21,7 @@ const Input = ({
   inputName,
   placeholderText,
   ariaLabelName,
+  error,
 }: InputProps) => {
   return (
     <div className="mb-4">
@@ -34,6 +38,12 @@ const Input = ({
         aria-label={ariaLabelName}
         required
       />
+      {error && (
+        <div className="flex mt-1 items-center text-red-900 text-sm">
+          <LuX />
+          <p className="ml-1">{error}</p>
+        </div>
+      )}
     </div>
   );
 };
